@@ -1,0 +1,219 @@
+/*
+Created by Jared Geilich on August 17, 2015
+All styles organized by the order they appear on the page
+*/
+
+html, body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #464646;
+    height: 100%;
+}
+
+/*General Styles*/
+h2 {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+
+p {
+    margin: 20px;
+}
+
+input {
+    font-size: 18px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #464646;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    width: 250px;
+}
+
+input:focus {
+    outline-width: 0;
+    border: 1px solid #765EF4;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(118, 94, 244, .75);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(118, 94, 244, .75);
+    box-shadow: 0px 0px 15px 2px rgba(118, 94, 244, .75);
+}
+
+.purpleButton, .purpleButton:link, .purpleButton:active, .purpleButton:visited {
+    background: #765EF4;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: none;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 10px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    transition: background 0.5s, box-shadow 0.5s;
+    -webkit-transition: background 0.5s, -webkit-box-shadow: 0.5s;
+    -moz-transition: background 0.5s, -moz-box-shadow 0.5s;
+}
+
+.purpleButton:hover {
+    background: #E4587B;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(228, 88, 123, .75);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(228, 88, 123, .75);
+    box-shadow: 0px 0px 15px 2px rgba(228, 88, 123, .75);
+}
+
+.lineBreak {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+/*Greeting Card*/
+.welcome {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/neighborhood.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+}
+
+.welcomeHeader {
+    align-self: flex-start;
+    -webkit-align-self: flex-start;
+    -moz-align-self: flex-start;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+.welcomeGreeting {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px 0 30px 0;
+    align-self: center;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    text-align: center;
+    max-width: 500px;
+}
+
+.welcomeFooter {
+    align-self: flex-end;
+    -webkit-align-self: flex-end;
+    -moz-align-self: flex-end;
+    width: 100%;
+    border-bottom: 6px solid #765EF4;
+}
+
+.downArrow {
+    height: 20px;
+    width: 40px;
+    background: #765EF4;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Navigation Bar*/
+.navbar {
+    background: #765EF4;
+    padding: 0 20px 0 20px;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+}
+
+logo {
+    line-height: 60px;
+    font-size: 30px;
+    align-self: center;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+}
+
+.navbarSpacer {
+    height: 60px;
+    display:none;
+}
+
+.navLinks {
+    align-self: center;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+}
+
+.navLink, .navLink:link, .navLink:active, .navLink:visited {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+
+.greenButton, .greenButton:link, .greenButton:active, .greenButton:visited {
+    background: #20C0E2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    box-shadow: none;
+    white-space: nowrap;
+    display: inline-block;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    transition: background 0.5s, box-shadow 0.5s;
+    -webkit-transition: background 0.5s, -webkit-box-shadow: 0.5s;
+    -moz-transition: background 0.5s, -moz-box-shadow 0.5s;
+}
+
+.greenButton:hover {
+    background: #61D89B;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(97, 216, 155, .75);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(97, 216, 155, .75);
+    box-shadow: 0px 0px 15px 2px rgba(97, 216, 155, .75);
+}
+
+/*Main Content*/
+.card {
+    background: #fff;
+    height: 1000px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+/*Logic*/
+@media (max-width: 600px) {
+  .navLink {
+    display: none;
+  }
+}
