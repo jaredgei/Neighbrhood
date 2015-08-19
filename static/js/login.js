@@ -17,6 +17,7 @@ function login(emailString, passwordString) {
         $('.errors').html('Invalid username or password');
       } else {
         console.log("Authenticated successfully with payload:", authData);
+        window.location = "home.html";
       }
     });
 }
