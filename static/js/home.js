@@ -1,4 +1,4 @@
-var ref = new Firebase("https://<YOUR-FIREBASE-APP>.firebaseio.com");
+var ref = new Firebase("https://scorching-heat-6427.firebaseIO.com");
 var authData = ref.getAuth();
 
 if (authData) {
