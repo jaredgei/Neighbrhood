@@ -271,7 +271,7 @@ logo {
 /*Page Breaks*/
 .pageBreak {
     background: #765EF4;
-    padding: 200px;
+    padding: 200px 20px 200px 20px;
     text-align: center;
     color: #fff;
     font-weight: 200;
