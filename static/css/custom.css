@@ -235,9 +235,15 @@ logo {
     -moz-align-self: center;
 }
 
-.social {
+.loneImage {
     margin: 50px;
+    width: 80%;
     max-width: 400px;
+}
+
+.smallOnly {
+    display:none;
+    margin-bottom: 0;
 }
 
 .wide {
@@ -274,6 +280,12 @@ logo {
 /*Logic*/
 @media (max-width: 600px) {
   .navLink {
+    display: none;
+  }
+  .smallOnly {
+    display: inline;
+  }
+  .tall, .wide {
     display: none;
   }
 }
