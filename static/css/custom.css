@@ -277,6 +277,15 @@ logo {
     font-weight: 200;
 }
 
+/*Footer*/
+.footer {
+    background: #765EF4;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
 /*Logic*/
 @media (max-width: 600px) {
   .navLink {
